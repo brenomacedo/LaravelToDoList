@@ -7,8 +7,12 @@
 .welcome-container {
   min-height: 100vh;
   padding: 30px;
+  display: flex;
   background: #020024;
-  background: linear-gradient(90deg, #020024 0%, #ff3232 0%, #e60c96 100%);
+  background: linear-gradient(90deg, #020024 0%, #ff5632 0%, #e60cc2 100%);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .welcome-info {
@@ -35,7 +39,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: lighter;
   margin: 10px 0;
-  font-size: 30px;
+  font-size: 50px;
 }
 
 .welcome-description {
@@ -47,10 +51,25 @@
   margin: 10px 0;
 }
 
-.welcome-sub-description {
+.welcome-btn {
+  background: #020024;
+  background: linear-gradient(90deg, #020024 0%, #e80000 0%, #8f0000 100%);
+  display: flex;
+  width: 300px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
   color: white;
   font-family: "Open Sans", sans-serif;
-  font-weight: lighter;
-  max-width: 500px;
+  border-radius: 8px;
+  border: 0;
+  outline: 0;
+  font-size: 15px;
+}
+
+.welcome-btn:hover {
+  background: #8f0000;
+  background: radial-gradient(circle, #8f0000 0%, #e80000 100%);
+  cursor: pointer;
 }
 

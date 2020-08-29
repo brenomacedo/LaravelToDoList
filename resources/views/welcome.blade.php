@@ -23,9 +23,12 @@
                 <h4 class="welcome-description">
                     A to do list made with laravel in order to test and train my php skills.
                 </h4>
-                <h4 class="welcome-sub-description">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer malesuada pharetra convallis. Nulla euismod nisl ex, quis facilisis velit sodales feugiat. Aliquam erat volutpat. Aliquam sit amet tristique odio.
-                </h4>
+                <button class="welcome-btn">
+                    Get Started
+                </button>
+            </div>
+            <div class="welcome-logo">
+                <img src="{{ asset('/images/logo.png') }}" alt="">
             </div>
         </div>
     </body>
