@@ -23,9 +23,9 @@
                 <h4 class="welcome-description">
                     A to do list made with laravel in order to test and train my php skills.
                 </h4>
-                <button class="welcome-btn">
+                <a href="login" class="welcome-btn">
                     Get Started
-                </button>
+                </a>
             </div>
             <div class="welcome-logo">
                 <img src="{{ asset('/images/logo.png') }}" alt="">

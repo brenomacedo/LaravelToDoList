@@ -65,11 +65,23 @@
   border: 0;
   outline: 0;
   font-size: 15px;
+  text-decoration: none;
 }
 
 .welcome-btn:hover {
   background: #8f0000;
   background: radial-gradient(circle, #8f0000 0%, #e80000 100%);
   cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  .welcome-container {
+    flex-direction: column-reverse;
+  }
+
+  .welcome-info {
+    margin-top: 100px;
+    align-items: center;
+  }
 }
 

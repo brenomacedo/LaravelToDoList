@@ -60,8 +60,17 @@
     border: 0
     outline: 0
     font-size: 15px
+    text-decoration: none
 
 .welcome-btn:hover
     background: rgb(143,0,0)
     background: radial-gradient(circle, rgba(143,0,0,1) 0%, rgba(232,0,0,1) 100%)
-    cursor: pointer    
+    cursor: pointer
+
+@media (max-width: 850px)
+    .welcome-container
+        flex-direction: column-reverse
+
+    .welcome-info
+        margin-top: 100px
+        align-items: center
