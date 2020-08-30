@@ -13,5 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'WelcomeController@index');
+Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/login', 'LoginController@index')->name('login');
+Route::get('/register', 'RegisterController@index')->name('register');
