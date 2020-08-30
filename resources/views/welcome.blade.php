@@ -23,7 +23,7 @@
                 <h4 class="welcome-description">
                     A to do list made with laravel in order to test and train my php skills.
                 </h4>
-                <a href="login" class="welcome-btn">
+                <a href="{{ route('login') }}" class="welcome-btn">
                     Get Started
                 </a>
             </div>
