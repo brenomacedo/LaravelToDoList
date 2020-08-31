@@ -16,9 +16,11 @@
             <input class="login-input" placeholder="email" type="email" name="email">
             <input class="login-input" placeholder="password" type="password" name="password">
             <input class="login-input" placeholder="confirm password" type="password" name="passwordconfirm">
-            <button class="login-button">Entrar</button>
+            <button class="login-button">Registrar</button>
             <a href="{{ route('login') }}" class="login-create-acc">I already have an account</a>
-            <p class="login-error">Usuário ou senha incorretos!</p>
+            @if($error)
+                <p class="login-error">{{ $error }}</p>
+            @endif
         </form>
     </div>
 </body>

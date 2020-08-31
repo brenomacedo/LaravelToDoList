@@ -18,6 +18,10 @@ class LoginController extends Controller
     }
 
     public function index() {
-        return view('user.login');
+        if(Auth::check()) {
+            return redirect('todolist');
+        } else {
+            return view('user.login');
+        }
     }
 }

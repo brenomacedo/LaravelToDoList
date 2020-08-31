@@ -63,10 +63,17 @@ class RegisterController extends Controller
     }
 
     public function register(Request $data) {
-        if($this->create($data)) {
+        
+        if($data['password'] !== $data['passwordconfirm']) {
+            return view('user.register', ['error' => 'As senhas não conferem!']);
+        } else if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
+            return view('user.register', ['error' => 'Selecione um email válido!']);
+        } else if (strlen($data['name']) < 4 || strlen($data['name'] > 16)) {
+            return view('user.register', ['error' => 'Seu nome deve ter entre 4 e 16 caracteres!']);
+        } else if($this->create($data)) {
             return redirect('login');
         } else {
-            return redirect('welcome');
+            return view('user.register', ['error' => 'Email já cadastrado!']);
         }
     }
 
