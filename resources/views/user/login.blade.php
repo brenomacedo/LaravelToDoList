@@ -16,7 +16,8 @@
             <input class="login-input" placeholder="password" type="password" name="password">
             <button class="login-button">Entrar</button>
             <a href="{{ route('register') }}" class="login-create-acc">I have not an account</a>
-            <p class="login-error">Usuário ou senha incorretos!</p>
+            <p class="login-error">{{ $error ?? '' }}</p>
+            
         </form>
     </div>
 </body>

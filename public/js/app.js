@@ -37335,16 +37335,28 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/sass/todolist.sass":
+/*!**************************************!*\
+  !*** ./resources/sass/todolist.sass ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!*****************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.sass ./resources/sass/login.sass ***!
-  \*****************************************************************************************/
+/*!************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.sass ./resources/sass/login.sass ./resources/sass/todolist.sass ***!
+  \************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! C:\xampp\htdocs\ToDoList\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! C:\xampp\htdocs\ToDoList\resources\sass\app.sass */"./resources/sass/app.sass");
-module.exports = __webpack_require__(/*! C:\xampp\htdocs\ToDoList\resources\sass\login.sass */"./resources/sass/login.sass");
+__webpack_require__(/*! C:\xampp\htdocs\ToDoList\resources\sass\login.sass */"./resources/sass/login.sass");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\ToDoList\resources\sass\todolist.sass */"./resources/sass/todolist.sass");
 
 
 /***/ })

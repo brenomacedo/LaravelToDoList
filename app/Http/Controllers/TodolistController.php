@@ -15,7 +15,7 @@ class TodolistController extends Controller
 {
     public function index() {
         if(Auth::check()) {
-            return view('user.todolist');
+            return view('user.todolist', ['user' => Auth::user()]);
         } else {
             return redirect('login');
         }

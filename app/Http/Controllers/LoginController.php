@@ -11,9 +11,9 @@ class LoginController extends Controller
     public function login(Request $data) {
         $credentials = $data->only('email', 'password');
         if(Auth::attempt($credentials)) {
-            return redirect('todolist');
+            return redirect('todolist', Auth::user());
         } else {
-            return redirect('welcome');
+            return view('user.login', ['error' => 'Usuário ou senha incorretos!']);
         }
     }
 

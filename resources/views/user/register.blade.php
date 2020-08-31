@@ -18,9 +18,7 @@
             <input class="login-input" placeholder="confirm password" type="password" name="passwordconfirm">
             <button class="login-button">Registrar</button>
             <a href="{{ route('login') }}" class="login-create-acc">I already have an account</a>
-            @if($error)
-                <p class="login-error">{{ $error }}</p>
-            @endif
+            <p class="login-error">{{ $error ?? '' }}</p>
         </form>
     </div>
 </body>
