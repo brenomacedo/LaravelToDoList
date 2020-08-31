@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form">
+        <form method="post" class="login-form">
             @csrf
             <img class="login-image" src="{{ asset('images/logo.png') }}" alt="logo">
             <input class="login-input" placeholder="name" type="text" name="name">
@@ -17,6 +17,7 @@
             <input class="login-input" placeholder="password" type="password" name="password">
             <input class="login-input" placeholder="confirm password" type="password" name="passwordconfirm">
             <button class="login-button">Entrar</button>
+            <a href="{{ route('login') }}" class="login-create-acc">I already have an account</a>
             <p class="login-error">Usuário ou senha incorretos!</p>
         </form>
     </div>

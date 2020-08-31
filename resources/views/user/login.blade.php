@@ -9,12 +9,13 @@
 </head>
 <body>
     <div class="login-container">
-        <form class="login-form">
+        <form method="post" class="login-form">
             @csrf
             <img class="login-image" src="{{ asset('images/logo.png') }}" alt="logo">
             <input class="login-input" placeholder="email" type="email" name="email">
             <input class="login-input" placeholder="password" type="password" name="password">
             <button class="login-button">Entrar</button>
+            <a href="{{ route('register') }}" class="login-create-acc">I have not an account</a>
             <p class="login-error">Usuário ou senha incorretos!</p>
         </form>
     </div>

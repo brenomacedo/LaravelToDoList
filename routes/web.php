@@ -15,4 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
 Route::get('/login', 'LoginController@index')->name('login');
+Route::post('/login', 'LoginController@login')->name('login/do');
 Route::get('/register', 'RegisterController@index')->name('register');
+Route::post('/register', 'RegisterController@register')->name('register/do');
+Route::get('/todolist', 'TodolistController@index')->name('todolist');
