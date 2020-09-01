@@ -11,6 +11,7 @@
   justify-content: center;
   padding: 30px;
   align-items: center;
+  flex-direction: column;
 }
 
 .todolist-input {
@@ -33,5 +34,13 @@
   width: 50px;
   color: white;
   outline: 0;
+}
+
+.todolist-container a {
+  color: white;
+  font-family: "Open Sans";
+  text-decoration: none;
+  align-self: flex-start;
+  justify-self: flex-end;
 }
 

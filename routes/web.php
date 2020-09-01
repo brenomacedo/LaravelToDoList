@@ -19,3 +19,4 @@ Route::post('/login', 'LoginController@login')->name('login/do');
 Route::get('/register', 'RegisterController@index')->name('register');
 Route::post('/register', 'RegisterController@register')->name('register/do');
 Route::get('/todolist', 'TodolistController@index')->name('todolist');
+Route::get('/todolist/logout', 'TodolistController@logout')->name('logout');

@@ -20,4 +20,13 @@ class TodolistController extends Controller
             return redirect('login');
         }
     }
+
+    public function logout() {
+        if(Auth::check()) {
+            Auth::logout();
+            return redirect('login');
+        } else {
+            return redirect('login');
+        }
+    }
 }

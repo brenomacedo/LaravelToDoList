@@ -13,6 +13,7 @@
 </head>
 <body>
     <div class="todolist-container">
+        <a href="{{ route('logout') }}">Logout <i class="fas fa-sign-out-alt"></i></a>
         <form method="post">
             <input class="todolist-input" type="text" name="newtask" placeholder="Nova tarefa">
             <button class="todolist-button"><i class="fas fa-plus"></i></button>
