@@ -18,13 +18,20 @@
             <a href="{{ route('logout') }}">Logout <i class="fas fa-sign-out-alt"></i></a>
         </div>
         <form method="post" class="todolist-form">
+            @csrf
             <input class="todolist-input" type="text" name="newtask" placeholder="Nova tarefa">
             <button class="todolist-button"><i class="fas fa-plus"></i></button>
         </form>
-        <div class="todolist-task">
-            <div class="todolist-task-item">Teste</div>
-            <button class="todolist-button-delete"><i class="fas fa-trash"></i></button>
-        </div>
+        
+        @foreach ($tasks as $task)
+            <div class="todolist-task">
+                <div class="todolist-task-item">{{ $task['name'] }}</div>
+                <form method="get" action="{{ route('todolist/delete') }}">
+                    <input type="hidden" value="{{ $task['id'] }}">
+                    <button class="todolist-button-delete"><i class="fas fa-trash"></i></button>
+                </form>
+            </div>
+        @endforeach
     </div>
 </body>
 </html>
