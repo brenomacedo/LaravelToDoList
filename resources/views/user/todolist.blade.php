@@ -27,7 +27,7 @@
             <div class="todolist-task">
                 <div class="todolist-task-item">{{ $task['name'] }}</div>
                 <form method="get" action="{{ route('todolist/delete') }}">
-                    <input type="hidden" value="{{ $task['id'] }}">
+                    <input name="id" type="hidden" value="{{ $task['id'] }}">
                     <button class="todolist-button-delete"><i class="fas fa-trash"></i></button>
                 </form>
             </div>

@@ -34,6 +34,11 @@ class TodolistController extends Controller
 
     public function insertTask(Request $request) {
         if(Auth::check()) {
+
+            if(!$request['newtask']) {
+                return redirect('todolist');
+            }
+
             $task = new Tasks();
             $task->name = $request['newtask'];
             $task->userId = Auth::user()['id'];
